@@ -51,25 +51,16 @@ NN 이 목적함수를 찾는것이라면 유전 알고리즘도 목적함수의
 
 
 유전 알고리즘을 이용해서 신경망을 구축하고자 했으니 이를 테스트 하기위한 DataSet 이 필요하다. 
-Regression 문제를 테스트하기 위해서, 실제 Linear Regression에서 쓰이는 테스트 데이터를 구했다.(Kaggle)
+Regression 문제를 테스트하기 위해서, Kaggle 에서 Regression 문제를 다루기위한 Competition Problem을 다루기로 결정했다.
 
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
 
-https://www.kaggle.com/andonians/random-linear-regression/download 
-
-
-간단하게 x,y 페어가 있고 이를 가장 잘 알맞는 함수를 찾는게 목적.
 
 # 유전 알고리즘 설계
 # 인코딩
 
-앞서 말했던것 처럼 해집단을 만들어야한다. 인코딩 길이는 제시된 데이터의 레이블수 1 로 선정한다.
+앞서 말했던것 처럼 해집단을 만들어야한다. 인코딩 길이는 제시된 데이터의 레이블수로 선정한다.
 
-
-따라서 인코딩이 의미하는 함수형태는 
-![인코딩 함수](https://latex.codecogs.com/gif.latex?F%28x%29%20%3D%20a*x_1%20&plus;%20b) 가 된다.
-
-
-유전 알고리즘의 목적은 계수 a 와  상수 b 의 값을 찾는 것.
 
 # 교차
 a 와 b 는 실수 값으로 실수 교차기법을 이용해야한다.
